@@ -3,11 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Chibi Saints</title>
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rancho', cursive;
+            background-color: #6bb5f0;
+        }
+        .logo {
+            height: 250px;
+            background: url('1500x500.png') no-repeat center;
+            background-size: contain;
+            margin: 20px;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .link {
+            float: left;
+            width: 250px;
+            height: 250px;
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            margin: 1rem;
+            position: relative;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            transition: box-shadow ease-in-out 0.3s;
+            background-size: cover;
+        }
+        .link:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .link .caption {
+            font-size: 2rem;
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-Loading...
-<script>
-    window.location.href = 'https://www.redbubble.com/people/megasha/collections/436880-chibi-saints';
-</script>
+<div class="logo"></div>
+<div class="links">
+    <a href="http://megasha.deviantart.com/gallery/54422403/Chibi-Saints-Collection">
+        <div class="link">
+            <span class="caption">See My Gallery</span>
+        </div>
+    </a>
+    <a href="https://www.redbubble.com/people/megasha/collections/436880-chibi-saints">
+        <div class="link">
+            <span class="caption">Shop on RedBubble</span>
+        </div>
+    </a>
+    <a href="http://www.cafepress.com/chibisaints">
+        <div class="link">
+            <span class="caption">Shop of CafePress</span>
+        </div>
+    </a>
+</div>
+<div class="links">
+    <a href="https://www.facebook.com/chibisaints/">
+        <div class="link">
+            <span class="caption">Like me on Facebook</span>
+        </div>
+    </a>
+    <a href="https://twitter.com/chibisaints">
+        <div class="link">
+            <span class="caption">Follow me on Twitter</span>
+        </div>
+    </a>
+</div>
 </body>
 </html>
